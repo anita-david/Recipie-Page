@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--White: hsl(0, 0%, 100%);
+	--Stone100: hsl(30, 54%, 90%);
+	--Stone150: hsl(30, 18%, 87%);
+	--Stone600: hsl(30, 10%, 34%);
+	--Stone900: hsl(24, 5%, 18%);
+	--Brown800: hsl(14, 45%, 36%);
+	--Rose800: hsl(332, 51%, 32%);
+	--Rose50: hsl(330, 100%, 98%);
+}
+
+body{
+	font-family:"Outfit", serif ;
+	background-color: var(--Stone100);
+}
+
+.container{
+	position: absolute;
+	top:190%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--White);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 1.5rem;
+	width: 50%;
+	gap: 1rem;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.name{
+	font-family:"Young Serif", serif ;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.description{
+	font-weight: 300;
+	font-size: 1rem;
+	color: var(--Stone600);
+}
+
+ul, ol, .nutrient{
+	padding: 0.5rem 2rem;
+	font-weight: 300;
+	color: var(--Stone600);
+	font-size: 1rem;
+}
+
+ul li, ol li{
+	padding-left: 1rem;
+	line-height: 1.6;
+}
+
+.preparation{
+	background-color: var(--Rose50);
+}
+
+h4{
+	color: var(--Rose800);
+	padding:0.5rem 1rem;
+}
+
+.ingredients, .instructions h3, .nutrition h3, .nutrient-content{
+	color: var(--Brown800);
+}
+
+.ingredients h3, .instructions h3, .nutrition h3{
+	font-family:"Young Serif", serif ;
+	font-weight: 500;
+	padding-bottom: 1rem;
+}
+
+.ingredients ul{
+	padding:0 1rem ;
+}
+
+hr{
+	border: none;
+	border-top: 1px solid var(--Stone600) ;
+	margin: 1.5rem 0;
+	flex-grow: 1;
+	width: 100%;
+}
+
+ol{
+	font-weight: 300;
+	color: var(--Stone600);
+	font-size: 1rem;
+}
+
+.nutrient-content{
+font-weight: 600;
+}
+
+table td{
+	border-bottom: 1px solid var(--Stone600);
+
+}
+
+table{
+	border-collapse: collapse;
+}
+
+.nutrient-details{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
